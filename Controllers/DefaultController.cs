@@ -9,13 +9,13 @@ namespace WebApiTest.Controllers
 {
     public class DefaultController : ApiController
     {
-        // GET api/values
+        // GET /api/Default/
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET api/values/5
+        // GET /api/Default?id=123
         public string Get(int id)
         {
             return "value";
